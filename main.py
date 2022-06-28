@@ -177,9 +177,40 @@ def selection(locationchoice, userchoice):  # The Selection function uses the us
                 goback = input("Click enter to go back or input a number...")
         locationgoback(locationchoice)
     elif locationchoice in ["3", "Greece"] and userchoice == "2":
-        f = open("GreeceInformation/GreecePhrases.txt", "r")
+        f = open("GreeceInformation/GreecePhrases.txt", encoding="utf8")
         print(f.read())
-        input("Click enter to go back...")
+        goback = input("Click enter to go back or input a number...")
+        while goback != "":
+            if goback == "1":
+                winsound.PlaySound('GHello.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "2":
+                winsound.PlaySound('GHow Are You.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "3":
+                winsound.PlaySound('GGood Morning.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "4":
+                winsound.PlaySound('GGood Night.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "5":
+                winsound.PlaySound('GPlease.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "6":
+                winsound.PlaySound('GGoodbye.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "7":
+                winsound.PlaySound('GYes.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "8":
+                winsound.PlaySound('GNo.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "9":
+                winsound.PlaySound('GSorry.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "10":
+                winsound.PlaySound('GI Love Greece', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
         locationgoback(locationchoice)
 
     elif locationchoice in ("1", "America") and userchoice == "3":
