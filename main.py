@@ -154,17 +154,27 @@ def selection(locationchoice, userchoice):  # The Selection function uses the us
             elif goback == "3":
                 winsound.PlaySound('IYour welcome.wav', winsound.SND_FILENAME)
                 goback = input("Click enter to go back or input a number...")
-            
-
-
-
-
-
-
-
-
-
-
+            elif goback == "4":
+                winsound.PlaySound('IGood Morning.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "5":
+                winsound.PlaySound('IGood Evening.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "6":
+                winsound.PlaySound('IBuy.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "7":
+                winsound.PlaySound('IYes.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "8":
+                winsound.PlaySound('INo.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "9":
+                winsound.PlaySound('ICio.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "10":
+                winsound.PlaySound('II Love Italy', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
         locationgoback(locationchoice)
     elif locationchoice in ["3", "Greece"] and userchoice == "2":
         f = open("GreeceInformation/GreecePhrases.txt", "r")
