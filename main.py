@@ -1,5 +1,6 @@
 import winsound
 from datetime import *  # I have imported the time of the current location for users to determine what time it
+
 # is where they are currently located.
 
 now = datetime.now()
@@ -145,7 +146,7 @@ def selection(locationchoice, userchoice):  # The Selection function uses the us
         print(f.read())
         goback = input("Click enter to go back or input a number...")
         while goback != "":
-            if goback == "1":                                             
+            if goback == "1":
                 winsound.PlaySound('IPlease.wav', winsound.SND_FILENAME)
                 goback = input("Click enter to go back or input a number...")
             elif goback == "2":
