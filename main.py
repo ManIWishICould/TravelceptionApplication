@@ -1,12 +1,10 @@
 from datetime import *  # I have imported the time of the current location for users to determine what time it
-
 # is where they are currently located.
 
 now = datetime.now()
 time = datetime.now
 today = date.today()
 current_time = now.strftime("%H:%M")
-
 
 
 def main_menu():  # This main Menu is used throughout the program to allow the user to see the different location
