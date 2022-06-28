@@ -128,7 +128,6 @@ def selection(locationchoice, userchoice):  # The Selection function uses the us
     elif locationchoice in ["2", "Italy"] and userchoice == "1":
         f = open("ItalyInformation/ItalyCulture.txt", "r")
         print(f.read())
-        input("Click enter to go back...")
         locationgoback(locationchoice)
     elif locationchoice in ["3", "Greece"] and userchoice == "1":
         f = open("GreeceInformation/GreeceCulture.txt", "r")
@@ -144,7 +143,28 @@ def selection(locationchoice, userchoice):  # The Selection function uses the us
     elif locationchoice in ["2", "Italy"] and userchoice == "2":
         f = open("ItalyInformation/ItalyPhrases.txt", "r")
         print(f.read())
-        input("Click enter to go back...")
+        goback = input("Click enter to go back or input a number...")
+        while goback != "":
+            if goback == "1":                                             
+                winsound.PlaySound('IPlease.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "2":
+                winsound.PlaySound('IThank you.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            elif goback == "3":
+                winsound.PlaySound('IYour welcome.wav', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            
+
+
+
+
+
+
+
+
+
+
         locationgoback(locationchoice)
     elif locationchoice in ["3", "Greece"] and userchoice == "2":
         f = open("GreeceInformation/GreecePhrases.txt", "r")

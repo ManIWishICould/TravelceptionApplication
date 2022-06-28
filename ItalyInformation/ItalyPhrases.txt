@@ -1,0 +1,12 @@
+Some words you should know on your trip in Italy (Input the number if you want to hear the word)
+
+1. Please = Per favore
+2. Thank you = Grazie
+3. Youre welcome = Prego
+4. Good morning = Buon giorno
+5. Good evening = Buona sera
+6. Buy = Comprare
+7. Yes = Si
+8. No = No
+9. Hello/Goodbye = Ciao
+10. I love Italy = Io amo l'Italia

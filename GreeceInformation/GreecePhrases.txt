@@ -1,0 +1,12 @@
+Some words you should know on your trip in Greece (Input the number if you want to hear the word)
+
+1.Hello = Γειά σου
+2.How are you? = Πώς είσαι?
+3.Good morning = Καλημέρα
+4.Good morning = καληνυχτα
+5.Please = σας παρακαλούμε
+6.Goodbye = Αντιο σας
+7.Yes = Ναί
+8.No = όχι
+9.Excuse me/Sorry = Συγνώμη
+10.I love Greece = Αγαπώ την Ελλάδα
