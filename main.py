@@ -1,3 +1,4 @@
+import winsound
 from datetime import *  # I have imported the time of the current location for users to determine what time it
 # is where they are currently located.
 
@@ -5,6 +6,9 @@ now = datetime.now()
 time = datetime.now
 today = date.today()
 current_time = now.strftime("%H:%M")
+
+def soundchoice(soundinput):
+    print("Hello world")
 
 
 def main_menu():  # This main Menu is used throughout the program to allow the user to see the different location
@@ -47,7 +51,7 @@ def greece():  # This is the interface for the Greece option on the main screen,
     print("Ahh Greece, the birthplace of the olympics!")
     print("\nGreece Information  ")
     print("1. Culture of Greece")
-    print("2. Simple Terms and Phrases")
+    print("2. Simple Terms")
     print("3. Do's and Dont's")
     print("4. Go Back")
 
