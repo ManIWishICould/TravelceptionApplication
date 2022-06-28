@@ -7,9 +7,6 @@ time = datetime.now
 today = date.today()
 current_time = now.strftime("%H:%M")
 
-def soundchoice(soundinput):
-    print("Hello world")
-
 
 def main_menu():  # This main Menu is used throughout the program to allow the user to see the different location
     # options.
@@ -51,7 +48,7 @@ def greece():  # This is the interface for the Greece option on the main screen,
     print("Ahh Greece, the birthplace of the olympics!")
     print("\nGreece Information  ")
     print("1. Culture of Greece")
-    print("2. Simple Terms")
+    print("2. Simple Terms and Phrases")
     print("3. Do's and Dont's")
     print("4. Go Back")
 
@@ -124,10 +121,10 @@ def selection(locationchoice, userchoice):  # The Selection function uses the us
     # is has a different set of inputs that determine what information to use.
 
     if locationchoice in ("1", "America") and userchoice == "1":  # This documentation is used to read the parameters of
-        f = open("AmericaInformation/AmericaCulture.txt", "r")  # the application and then open the desired file and
-        print(f.read())  # proceed the read off of the file and print it to the
-        input("Click enter to go back...")  # user. The use of if statements and elif allows the
-        locationgoback(locationchoice)  # the function to select the right option and print it
+        f = open("AmericaInformation/AmericaCulture.txt", "r")    # the application and then open the desired file and
+        print(f.read())                                           # proceed the read off of the file and print it to the
+        input("Click enter to go back...")                        # user. The use of if statements and elif allows the
+        locationgoback(locationchoice)                            # the function to select the right option and print it
     elif locationchoice in ["2", "Italy"] and userchoice == "1":
         f = open("ItalyInformation/ItalyCulture.txt", "r")
         print(f.read())
@@ -161,7 +158,7 @@ def selection(locationchoice, userchoice):  # The Selection function uses the us
         input("Click enter to go back...")
         locationgoback(locationchoice)
     elif locationchoice in ["2", "Italy"] and userchoice == "3":
-        f = open("ItalyInformation/ItalyPhrases.txt", "r")
+        f = open("ItalyInformation/ItalyDos.txt", "r")
         print(f.read())
         input("Click enter to go back...")
         locationgoback(locationchoice)
