@@ -171,10 +171,13 @@ def selection(locationchoice, userchoice):  # The Selection function uses the us
                 winsound.PlaySound('INo.wav', winsound.SND_FILENAME)
                 goback = input("Click enter to go back or input a number...")
             elif goback == "9":
-                winsound.PlaySound('ICio.wav', winsound.SND_FILENAME)
+                winsound.PlaySound('ICiao.wav', winsound.SND_FILENAME)
                 goback = input("Click enter to go back or input a number...")
             elif goback == "10":
                 winsound.PlaySound('II Love Italy', winsound.SND_FILENAME)
+                goback = input("Click enter to go back or input a number...")
+            else:
+                print("You're option is not valid please try again")
                 goback = input("Click enter to go back or input a number...")
         locationgoback(locationchoice)
     elif locationchoice in ["3", "Greece"] and userchoice == "2":
