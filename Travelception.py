@@ -129,6 +129,7 @@ def selection(locationchoice, userchoice):  # The Selection function uses the us
     elif locationchoice in ["2", "Italy"] and userchoice == "1":
         f = open("ItalyInformation/ItalyCulture.txt", "r")
         print(f.read())
+        input("Click enter to go back...")
         locationgoback(locationchoice)
     elif locationchoice in ["3", "Greece"] and userchoice == "1":
         f = open("GreeceInformation/GreeceCulture.txt", "r")
@@ -159,7 +160,7 @@ def selection(locationchoice, userchoice):  # The Selection function uses the us
                 winsound.PlaySound('IGood Morning.wav', winsound.SND_FILENAME)
                 goback = input("Click enter to go back or input a number...")
             elif goback == "5":
-                winsound.PlaySound('IGood Evening.wav', winsound.SND_FILENAME)
+                winsound.PlaySound('IGood Evening .wav', winsound.SND_FILENAME)
                 goback = input("Click enter to go back or input a number...")
             elif goback == "6":
                 winsound.PlaySound('IBuy.wav', winsound.SND_FILENAME)
@@ -278,7 +279,7 @@ def locationgoback(locationchoice):  # Locationgoback takes the user from the in
 main_menu()
 locationchoice = input("Where do you want to go?: ")
 while locationchoice >= "6":
-    print("Wrong choice please try again!!!")
+    print("That not an option please try again.")
     locationchoice = input("Where do you want to go:?")
 location(locationchoice)
 userchoice = choice()
