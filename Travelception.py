@@ -1,4 +1,4 @@
-import winsound
+import winsound  # This imports the module for sounds so the words can be taught to users
 from datetime import *  # I have imported the time of the current location for users to determine what time it
 
 # is where they are currently located.
@@ -82,7 +82,7 @@ def Exit():  # This is a simple exit for users to use to leave the program
     exit()
 
 
-def errorcheck(locationchoice):
+def errorcheck(locationchoice):  # This checks if the users input is allowed and follows the what the program provides
     if locationchoice >= "5":
         print("Invalid choice please try again!!")
         locationchoice = input("Where do you want to go?: ")
@@ -147,8 +147,10 @@ def selection(locationchoice, userchoice):  # The Selection function uses the us
         print(f.read())
         goback = input("Click enter to go back or input a number...")
         while goback != "":
-            if goback == "1":
-                winsound.PlaySound('IPlease.wav', winsound.SND_FILENAME)
+            if goback == "1":  # Go back is a value we set that allows the user the option to play the word or leave the
+                #  program
+                winsound.PlaySound('IPlease.wav', winsound.SND_FILENAME)  # This line checks the folder for the sound
+                # file and plays it to the user
                 goback = input("Click enter to go back or input a number...")
             elif goback == "2":
                 winsound.PlaySound('IThank you.wav', winsound.SND_FILENAME)
